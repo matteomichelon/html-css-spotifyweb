@@ -11,6 +11,7 @@
 .wrapper {
     height: 100vh;
     width: 100%;
+    color: white;
 }
 
 a {
@@ -24,6 +25,7 @@ a {
 main {
     height: calc( 100% - 100px);
     width: 100%;
+    background-color: #141922;
 }
 
 /* nav */
@@ -33,6 +35,7 @@ nav {
     width: 200px;
     height: 100%;
     overflow: hidden;
+    background-color: black;
 }
 
 .container-flex {
@@ -82,6 +85,7 @@ footer {
     height: 100px;
     width: 100%;
     overflow: hidden;
+    background-color: #282828;
 }
 
 /* UPGRADE */
@@ -92,7 +96,8 @@ footer {
     top: 0;
     width: calc( 100% - 200px);
     text-align: right;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #080b12;
+    opacity: 0.8;
 }
 
 @media screen and (max-width: 768px) {
