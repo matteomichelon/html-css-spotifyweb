@@ -19,7 +19,7 @@ body {
     width: 100%;
 }
 
-a{
+a {
     list-style-type: none;
     color: white;
     text-decoration: none;
@@ -45,6 +45,47 @@ nav {
     background-color: teal;
 }
 
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.playlist-container {
+    flex-grow: 1;
+    overflow: hidden;
+    min-height: 100px;
+    /* test */
+    background-color: violet;
+}
+
+.playlist {
+    height: 100%;
+    overflow-y: auto;
+    /* test */
+    background-color: tomato;
+}
+
+.main-links {
+    /* test */
+    background-color: tomato;
+}
+
+.logo {
+    
+    /* test */
+    height: 70px;
+    background-color: red;
+}
+
+.install {
+    
+    /* test */
+    height: 70px;
+    background-color: wheat;
+    color: black;
+}
+
 /* main-right */
 
 .main-right {
@@ -54,27 +95,6 @@ nav {
     overflow-y: auto;
     /* test */
     background-color: white;
-    color: black;
-}
-
-.main-links{
-    /* test */
-    background-color: tomato;
-}
-
-.logo{
-  /* test */
-  background-color: red;  
-}
-
-.playlist-container{
-    /* test */
-    background-color: violet;
-}
-
-.install{
-    /* test */
-    background-color: wheat;
     color: black;
 }
 
