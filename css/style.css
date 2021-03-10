@@ -37,7 +37,7 @@ h2 {
     padding: 10px 0
 }
 
-nav li, .playlist-button{
+nav li, .playlist-button {
     padding: 0 15px 15px 15px;
     opacity: 0.6;
     font-size: 12px;
@@ -118,11 +118,11 @@ nav .link {
     vertical-align: middle;
 }
 
-nav .install{
+nav .install {
     padding-bottom: 15px;
 }
 
-nav .install .link{
+nav .install .link {
     padding-left: 15px;
 }
 
@@ -151,8 +151,39 @@ nav .install .link:first-child {
     opacity: 0.6;
     font-size: 12px;
 }
-nav .install img{
+
+nav .install img {
     margin-right: 5px;
+}
+
+.xs-logo-container {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    nav .logo, nav .main-links, nav .playlist-container, nav .install {
+        display: none;
+    }
+    .xs-logo-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+    }
+    .xs-logo-container .xs-logo {
+        width: 50%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .xs-logo-container img:first-child {
+        padding-top: 5px;
+    }
+
+
+   /*  .xs-logo-container .logo-bottom{
+        align-items: flex-end;
+    } */
+    
 }
 
 /* main-right */
