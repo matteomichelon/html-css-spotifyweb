@@ -19,6 +19,12 @@ body {
     width: 100%;
 }
 
+a{
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+}
+
 /* MAIN */
 
 main {
@@ -48,6 +54,27 @@ nav {
     overflow-y: auto;
     /* test */
     background-color: white;
+    color: black;
+}
+
+.main-links{
+    /* test */
+    background-color: tomato;
+}
+
+.logo{
+  /* test */
+  background-color: red;  
+}
+
+.playlist-container{
+    /* test */
+    background-color: violet;
+}
+
+.install{
+    /* test */
+    background-color: wheat;
     color: black;
 }
 
