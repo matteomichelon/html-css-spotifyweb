@@ -7,12 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 
 <body>
 
     <div class="wrapper">
 
+        <!-- MAIN -->
         <main>
 
             <!-- Nav -->
@@ -22,7 +26,7 @@
 
                     <!-- Logo -->
                     <div class="logo">
-                        Logo
+                        <img src="img/logo.svg" alt="Spotify Logo">
                     </div>
                     <!-- end Logo -->
 
@@ -30,13 +34,23 @@
                     <div class="main-links">
                         <ul>
                             <li>
-                                <a href="#">Home</a>
+                                <!-- TODO: scoprire come diminuire altezza barra laterale -->
+                                <div class="link">
+                                    <img src="img/home.svg" alt="Home icon">
+                                    <span>Home</span>
+                                </div>
                             </li>
                             <li>
-                                <a href="#">Cerca</a>
+                                <div class="link">
+                                    <img src="img/search.svg" alt="Search icon">
+                                    <span>Cerca</span>
+                                </div>
                             </li>
                             <li>
-                                <a href="#">La tua Libreria</a>
+                                <div class="link">
+                                    <img src="img/libreria.svg" alt="Library icon">
+                                    <span>La tua Libreria</span>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -45,10 +59,10 @@
                     <!-- Palylist Container -->
                     <div class="playlist-container">
 
-                        <h2>Playlist</h2>
+                        <h2>PLAYLIST</h2>
 
                         <div class="playlist-button">
-                            <button>+</button>
+                            <a href="#"><i class="fas fa-plus-square"></i></a>
                             <span>Crea Playlist</span>
                         </div>
 
@@ -97,15 +111,18 @@
 
             <!-- Main Right -->
             <div class="main-right">
-                
+
             </div>
             <!-- end Main Right -->
 
         </main>
+        <!-- end MAIN -->
 
+        <!-- FOOTER -->
         <footer>
             footer
         </footer>
+        <!-- end FOOTER -->
 
         <!-- Upgrade -->
         <div class="upgrade">

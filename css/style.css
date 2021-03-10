@@ -6,7 +6,15 @@
     box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+}
+
 /* COMMON */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 
 .wrapper {
     height: 100vh;
@@ -15,9 +23,17 @@
 }
 
 a {
-    list-style-type: none;
     color: white;
     text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+h2 {
+    font-size: 15px;
+    padding: 10px 0
 }
 
 /* MAIN */
@@ -38,27 +54,69 @@ nav {
     background-color: black;
 }
 
-.container-flex {
+nav .container-flex {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-.playlist-container {
+nav .playlist-container {
     flex-grow: 1;
     overflow: hidden;
     min-height: 100px;
 }
 
-.playlist {
+nav .playlist {
     height: 100%;
     overflow-y: auto;
 }
 
-.install {
-    /* test */
-    height: 70px;
+nav .logo {
+    height: 80px;
+    /* l'altezza fissa serve per avere l'upgrade fixed della stessa altezza */
+    padding: 15px 50px 15px 15px;
 }
+
+nav li, .playlist-button {
+    padding: 0 0 15px 15px;
+    opacity: 0.6;
+    font-size: 12px;
+}
+
+nav .main-links li:first-child {
+    border-left: 3px solid #adff2f;
+    opacity: 1;
+}
+
+nav .link img, nav span {
+    cursor: pointer;
+}
+
+nav .link img {
+    width: 15%;
+    height: auto;
+    vertical-align: middle;
+}
+
+nav .link {
+    vertical-align: middle;
+}
+
+.playlist-container h2{
+    padding: 0 0 15px 15px;
+    font-size: 15px;
+}
+
+.playlist-button i{
+    font-size: 50px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.playlist-button span{
+    vertical-align: middle;
+}
+
 
 /* main-right */
 
@@ -91,6 +149,8 @@ footer {
 /* UPGRADE */
 
 .upgrade {
+    height: 80px;
+    /* l'altezza fissa uguale al logo */
     position: fixed;
     right: 0;
     top: 0;
