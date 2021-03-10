@@ -8,6 +8,7 @@
 
 img {
     width: 100%;
+    height: auto;
 }
 
 /* COMMON */
@@ -34,6 +35,12 @@ li {
 h2 {
     font-size: 15px;
     padding: 10px 0
+}
+
+nav li, .playlist-button{
+    padding: 0 15px 15px 15px;
+    opacity: 0.6;
+    font-size: 12px;
 }
 
 /* MAIN */
@@ -77,12 +84,6 @@ nav .logo {
     padding: 15px 50px 15px 15px;
 }
 
-nav li, .playlist-button {
-    padding: 0 0 15px 15px;
-    opacity: 0.6;
-    font-size: 12px;
-}
-
 nav .main-links li:first-child {
     border-left: 3px solid #adff2f;
     opacity: 1;
@@ -102,21 +103,57 @@ nav .link {
     vertical-align: middle;
 }
 
-.playlist-container h2{
-    padding: 0 0 15px 15px;
+.playlist-container h2 {
+    padding: 0 15px 15px 15px;
     font-size: 15px;
 }
 
-.playlist-button i{
+.playlist-button i {
     font-size: 50px;
     vertical-align: middle;
     padding-right: 5px;
 }
 
-.playlist-button span{
+.playlist-button span {
     vertical-align: middle;
 }
 
+nav .install{
+    padding-bottom: 15px;
+}
+
+nav .install .link{
+    padding-left: 15px;
+}
+
+nav .install .link img {
+    width: 10%;
+}
+
+nav .install .line {
+    margin: 10px 0px 10px 15px;
+    height: 1px;
+    display: inline-block;
+    border-bottom: 1px solid;
+    opacity: 0.6;
+    width: 80%;
+}
+
+#img-profile {
+    background-color: #808080;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+
+nav .install .link:first-child {
+    margin-top: 10px;
+    opacity: 0.6;
+    font-size: 12px;
+}
+nav .install img{
+    margin-right: 5px;
+}
 
 /* main-right */
 
