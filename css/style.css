@@ -43,6 +43,22 @@ nav li, .playlist-button {
     font-size: 12px;
 }
 
+nav .link img, nav span, footer .flex-left span, footer #play {
+    cursor: pointer;
+}
+
+.bar-container {
+    border-radius: 2px;
+    background-color: #5a5a5a;
+}
+
+.bar-top {
+    height: 4px;
+    border-radius: 2px;
+    width: 30%;
+    background-color: #c1c1c1ed;
+}
+
 /* MAIN */
 
 main {
@@ -87,10 +103,6 @@ nav .logo {
 nav .main-links li:first-child {
     border-left: 3px solid #adff2f;
     opacity: 1;
-}
-
-nav .link img, nav span {
-    cursor: pointer;
 }
 
 nav .link img {
@@ -266,7 +278,7 @@ footer .flex-left {
     display: inline-block;
 }
 
-.heart-save-container a:last-child{
+.heart-save-container a:last-child {
     padding-left: 10px;
 }
 
@@ -292,8 +304,9 @@ footer .flex-center {
 }
 
 #play {
-    font-size: 23px;
+    font-size: 25px;
     vertical-align: middle;
+    padding-right: 25px;
 }
 
 .flex-center-container {
@@ -305,10 +318,8 @@ footer .flex-center {
     padding-top: 10px;
 }
 
-.flex-center-container .bar {
-    height: 1px;
-    width: 80%;
-    border-top: 10px solid white;
+.flex-center-bottom .bar-container {
+    width: 85%;
 }
 
 /* Flex Right */
@@ -330,10 +341,8 @@ footer .flex-right {
     padding-right: 20px;
 }
 
-.flex-right-container .bar {
-    height: 1px;
-    width: 50%;
-    border-top: 10px solid white;
+.flex-right-container .bar-container {
+    min-width: 30%;
 }
 
 /* UPGRADE */
