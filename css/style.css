@@ -126,9 +126,6 @@ nav .install .link {
     padding-left: 15px;
 }
 
-nav .install .link img {
-    width: 10%;
-}
 
 nav .install .line {
     margin: 10px 0px 10px 15px;
@@ -139,11 +136,10 @@ nav .install .line {
     width: 80%;
 }
 
-#img-profile {
+
+nav .img-profile {
     background-color: #808080;
     border-radius: 50%;
-    height: 20px;
-    width: 20px;
 }
 
 nav .install .link:first-child {
@@ -169,6 +165,8 @@ nav .install img {
         flex-direction: column;
         height: 100%;
         align-items: center;
+        text-align: center;
+        /* text-align: center; riferita--> .logo-bottom-img */
     }
     .xs-logo-container .xs-logo {
         width: 50%;
@@ -179,6 +177,24 @@ nav .install img {
         padding-top: 5px;
     }
 
+    .xs-logo-container .xs-logo:last-child{
+        padding-bottom: 10px;
+    }
+    
+    .xs-logo-container .logo-grow{
+        flex-grow: 1;
+    }
+
+    .xs-logo-container .logo-bottom img{
+        width: 50%;
+    }
+
+    nav .logo-bottom .img-profile {
+        background-color: #808080;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+    }
 
    /*  .xs-logo-container .logo-bottom{
         align-items: flex-end;
