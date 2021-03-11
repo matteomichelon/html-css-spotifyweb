@@ -272,10 +272,12 @@ footer .flex-left {
 
 .flex-left-container .flex-left-title span {
     font-size: 10px;
+    opacity: 0.6;
 }
 
 .heart-save-container #heart, .heart-save-container #folder {
     display: inline-block;
+    opacity: 0.6;
 }
 
 .heart-save-container a:last-child {
@@ -357,6 +359,16 @@ footer .flex-right {
     text-align: right;
     background-color: #080b12;
     opacity: 0.8;
+    text-transform: uppercase;
+}
+
+.upgrade a{
+    border: 1px solid white;
+    padding: 15px 50px;
+    border-radius: 50px;
+    margin: 10px 5px 0 0;
+    display: inline-block;
+    font-size: 15px;
 }
 
 @media screen and (max-width: 768px) {
