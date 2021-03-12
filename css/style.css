@@ -62,7 +62,29 @@ nav .link img, nav span, footer .flex-left span, footer #play {
     border-radius: 2px;
     width: 30%;
     background-color: #c1c1c1ed;
+    position: relative;
 }
+
+.bar-circle{
+    position: absolute;
+    top: -4px;
+    left: 150px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: white;
+    display: none;
+}
+
+.bar-top:hover {
+    background-color: #adff2f;
+    cursor: pointer;
+}
+
+.bar-circle:hover{
+    display: inline-block;
+} 
+
 
 .border-view {
     position: relative;
@@ -402,9 +424,18 @@ footer .flex-left {
     opacity: 0.6;
 }
 
+.flex-left-container .flex-left-title span:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+
 .heart-save-container #heart, .heart-save-container #folder {
     display: inline-block;
     opacity: 0.6;
+}
+
+.heart-save-container #heart:hover, .heart-save-container #folder:hover{
+    opacity: 1;
 }
 
 .heart-save-container a:last-child {
@@ -424,7 +455,7 @@ footer .flex-center {
     padding-top: 5px;
 }
 
-.flex-center-top i {
+.flex-center-top a {
     padding-right: 25px;
 }
 
@@ -432,10 +463,13 @@ footer .flex-center {
     padding-right: 0;
 }
 
-#play {
+#play-hover {
     font-size: 25px;
     vertical-align: middle;
-    padding-right: 25px;
+}
+
+#play-hover:hover{
+    font-size: 30px;
 }
 
 .flex-center-container {
@@ -449,6 +483,7 @@ footer .flex-center {
 
 .flex-center-bottom .bar-container {
     width: 85%;
+    position: relative;
 }
 
 /* Flex Right */
