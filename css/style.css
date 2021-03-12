@@ -225,24 +225,38 @@ nav .install img {
     }
 }
 
-/* Right Top */
+/* Section Top */
 
 .main-right .top-container{
-    text-align: center;
-    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     font-size: 12px;
 }
 
-.top-container span{
-    display: inline-block;
+.main-right .top-container span{
     padding-right: 60px;
+    padding-bottom: 10px;
 }
 
-.top-container span:last-child{
-    padding-right: 0;
+.main-right .top-container span:first-child{
+    border-bottom: 1px solid green ;
 }
 
 
+/* Section Main Center */
+
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.single-song-box{
+    width: 200px;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+}
 
 /* FOOTER */
 
