@@ -251,8 +251,25 @@ main .main-center {
     padding: 50px 30px;
 }
 
-.section-playlist > h2, .section-playlist > h4{
+.section-playlist-title {
+    padding: 20px 0;
+}
+
+.main-right .main-center .section-playlist:first-child .section-playlist-title {
+    padding-top: 0;
+}
+
+.section-playlist-title>h2, .section-playlist-title>h4 {
     padding-left: 10px;
+}
+
+.main-center h2 {
+    font-size: 24px;
+}
+
+.main-center h4 {
+    opacity: 0.6;
+    font-size: 12px;
 }
 
 .box-container {
@@ -267,6 +284,15 @@ main .main-center {
     padding: 10px;
 }
 
+.section-playlist .box-container .single-song-box h3 {
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+.section-playlist .box-container .single-song-box span {
+    font-size: 12px;
+    opacity: 0.6;
+}
 
 /* FOOTER */
 
