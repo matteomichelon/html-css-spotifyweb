@@ -59,6 +59,15 @@ nav .link img, nav span, footer .flex-left span, footer #play {
     background-color: #c1c1c1ed;
 }
 
+.border-view {
+    position: relative;
+}
+
+.border-view .border-green {
+    position: absolute;
+    background-color: #adff2f;
+}
+
 /* MAIN */
 
 main {
@@ -100,9 +109,11 @@ nav .logo {
     padding: 15px 50px 15px 15px;
 }
 
-nav .main-links li:first-child {
-    border-left: 3px solid #adff2f;
-    opacity: 1;
+.main-links .border-view .border-green {
+    width: 3px;
+    top: 0px;
+    bottom: 0;
+    left: -15px;
 }
 
 nav .link img {
@@ -228,22 +239,29 @@ nav .install img {
 /* Section Top */
 
 .main-right .top-container {
-    display: flex;
+    /* TODO eliminare flex se non è necessario */
+    /* display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; */
+    text-align: center;
     font-size: 12px;
     text-transform: uppercase;
     opacity: 0.6;
 }
 
-.main-right .top-container span {
+.main-right .top-container li {
+    display: inline-block;
     padding-right: 60px;
     padding-bottom: 10px;
 }
 
-.main-right .top-container span:first-child {
-    border-bottom: 1px solid green;
+.main-right .top-container .border-view .border-green {
+    bottom: 0px;
+    left: 25px;
+    height: 3px;
+    width: 25%;
 }
+
 
 /* Section Main Center */
 
