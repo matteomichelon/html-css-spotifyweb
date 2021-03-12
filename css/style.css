@@ -312,6 +312,29 @@ main .main-center {
     opacity: 0.6;
 }
 
+.single-song-box:hover img{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.single-song-box:hover .box-image a{
+    display: inline-block;
+}
+
+.single-song-box .box-image{
+    position: relative;
+}
+
+.single-song-box .box-image a{
+    position: absolute;    
+    top: 34%;
+    left: 34%;
+    font-size: 60px;
+    display: none;
+}
+
+
+
 /* FOOTER */
 
 footer {
