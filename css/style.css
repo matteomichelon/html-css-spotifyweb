@@ -246,7 +246,15 @@ nav .install img {
     text-align: center;
     font-size: 12px;
     text-transform: uppercase;
+}
+
+.main-right .top-container a{
     opacity: 0.6;
+}
+
+
+.main-right .top-container a:hover{
+    opacity: 1;
 }
 
 .main-right .top-container li {
