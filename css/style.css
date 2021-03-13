@@ -15,7 +15,7 @@ img {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: white;
+    background-color: black;
 }
 
 .wrapper {
@@ -185,7 +185,6 @@ nav .install img {
         height: 100%;
         align-items: center;
         text-align: center;
-        /* text-align: center; riferita--> .logo-bottom-img */
     }
     .xs-logo-container .xs-logo {
         width: 50%;
@@ -210,9 +209,6 @@ nav .install img {
         height: 30px;
         width: 30px;
     }
-    /*  .xs-logo-container .logo-bottom{
-        align-items: flex-end;
-    } */
 }
 
 /* main-right */
@@ -319,7 +315,6 @@ main .main-center {
 }
 
 .single-song-box {
-    /* width: 200px; */
     width: 15%;
     height: auto;
     text-align: center;
