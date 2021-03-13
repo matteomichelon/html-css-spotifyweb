@@ -171,8 +171,48 @@ nav .install img {
     margin-right: 5px;
 }
 
+/* Logo Xs */
+
 .xs-logo-container {
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    text-align: center;
     display: none;
+}
+
+.xs-logo-container .xs-logo {
+    width: 50%;
+    height: auto;
+    padding-bottom: 20px;
+    opacity: 0.6;
+}
+
+.xs-logo-container .xs-logo:first-child, .xs-logo-container .xs-logo:hover {
+    opacity: 1;
+}
+
+.xs-logo-container img:first-child {
+    padding-top: 5px;
+}
+
+.xs-logo-container .xs-logo:last-child {
+    padding-bottom: 10px;
+}
+
+.xs-logo-container .logo-grow {
+    flex-grow: 1;
+}
+
+.xs-logo-container .logo-bottom img {
+    width: 50%;
+}
+
+nav .logo-bottom .img-profile {
+    background-color: #808080;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
 }
 
 @media screen and (max-width: 768px) {
@@ -181,33 +221,6 @@ nav .install img {
     }
     .xs-logo-container {
         display: flex;
-        flex-direction: column;
-        height: 100%;
-        align-items: center;
-        text-align: center;
-    }
-    .xs-logo-container .xs-logo {
-        width: 50%;
-        height: auto;
-        padding-bottom: 20px;
-    }
-    .xs-logo-container img:first-child {
-        padding-top: 5px;
-    }
-    .xs-logo-container .xs-logo:last-child {
-        padding-bottom: 10px;
-    }
-    .xs-logo-container .logo-grow {
-        flex-grow: 1;
-    }
-    .xs-logo-container .logo-bottom img {
-        width: 50%;
-    }
-    nav .logo-bottom .img-profile {
-        background-color: #808080;
-        border-radius: 50%;
-        height: 30px;
-        width: 30px;
     }
 }
 
