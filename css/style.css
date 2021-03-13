@@ -365,7 +365,6 @@ main .main-center {
         font-size: 18px;
         padding: 4px 0;
     }
-    
     .section-playlist .box-container .single-song-box span {
         font-size: 13px;
     }
@@ -379,7 +378,6 @@ main .main-center {
         font-size: 10px;
         padding: 2px 0;
     }
-    
     .section-playlist .box-container .single-song-box span {
         font-size: 9px;
     }
@@ -528,7 +526,7 @@ footer .flex-center {
 footer .flex-center-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: auto;
     height: 100%;
     padding-top: 10px;
@@ -536,7 +534,25 @@ footer .flex-center-container {
 
 .flex-center-container .bar-top i {
     left: 95%;
-    top: -4px;
+    top: -3px;
+}
+
+@media screen and (max-width: 768px) {
+    .bar-container {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width:991px) {
+    .bar-container {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .bar-container {
+        width: 80%;
+    }
 }
 
 /* Flex Right */
