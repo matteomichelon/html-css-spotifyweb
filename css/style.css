@@ -15,12 +15,14 @@ img {
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: white;
 }
 
 .wrapper {
     height: 100vh;
     width: 100%;
     color: white;
+    min-width: 550px;
 }
 
 a {
@@ -235,10 +237,6 @@ nav .install img {
 /* Section Top */
 
 .main-right .top-container {
-    /* TODO eliminare flex se non è necessario */
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center; */
     text-align: center;
     font-size: 12px;
     text-transform: uppercase;
@@ -258,11 +256,34 @@ nav .install img {
     padding-bottom: 10px;
 }
 
+.main-right .top-container li:first-child {
+    padding-left: 60px;
+}
+
 .main-right .top-container .border-view .border-green {
     bottom: 0px;
-    left: 25px;
+    left: 37%;
     height: 3px;
     width: 25%;
+}
+
+@media screen and (min-width:769px) and (max-width:991px) {
+    .main-right .top-container li {
+        padding-right: 15px;
+    }
+    .main-right .top-container li:first-child {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-right .top-container li {
+        padding-right: 15px;
+        margin-bottom: 5px;
+    }
+    .main-right .top-container li:first-child {
+        padding-left: 10px;
+    }
 }
 
 /* Section Main Center */
@@ -335,6 +356,15 @@ main .main-center {
     cursor: pointer;
 }
 
+
+@media screen and (min-width:769px) and (max-width:991px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
 /* FOOTER */
 
 /* Footer Common */
@@ -342,7 +372,6 @@ main .main-center {
 footer {
     height: 100px;
     width: 100%;
-    overflow: hidden;
     background-color: #282828;
     padding: 10px;
 }
