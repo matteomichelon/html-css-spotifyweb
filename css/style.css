@@ -511,15 +511,13 @@ footer .flex-center {
 }
 
 .flex-center-top {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    width: 40%;
+    height: auto;
     padding-top: 5px;
-}
-
-.flex-center-top a {
-    padding-right: 25px;
-}
-
-.flex-center i:last-child {
-    padding-right: 0;
 }
 
 #play-hover {
@@ -537,7 +535,7 @@ footer .flex-center-container {
     justify-content: space-between;
     width: auto;
     height: 100%;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .flex-center-container .bar-top i {
@@ -546,7 +544,7 @@ footer .flex-center-container {
 }
 
 @media screen and (max-width: 768px) {
-    .bar-container {
+    .bar-container, .flex-center-top {
         width: 70%;
     }
 }
@@ -554,6 +552,9 @@ footer .flex-center-container {
 @media screen and (min-width: 769px) and (max-width:991px) {
     .bar-container {
         width: 75%;
+    }
+    .flex-center-top {
+        width: 50%;
     }
 }
 
