@@ -53,6 +53,10 @@ nav li, .playlist-button {
     background-color: #adff2f;
 }
 
+.display-flex {
+    display: flex;
+}
+
 /* MAIN */
 
 main {
@@ -71,8 +75,7 @@ nav {
     background-color: black;
 }
 
-nav .container-flex {
-    display: flex;
+nav .nav-container  {
     flex-direction: column;
     height: 100%;
 }
@@ -233,15 +236,11 @@ nav .logo-bottom .img-profile {
     padding-top: 110px;
 }
 
-.main-right .top-container a,
- .main-center h4,
-  .main-center .box span,
-   .main-center .box:hover img {
+.main-right .top-container a, .main-center h4, .main-center .box span, .main-center .box:hover img {
     opacity: 0.6;
 }
 
-.main-right .top-container a:hover,
-.main-right .top-container>.border-view a:hover {
+.main-right .top-container a:hover, .main-right .top-container>.border-view a:hover {
     opacity: 1;
 }
 
@@ -336,7 +335,6 @@ main .main-center {
 }
 
 .box-container {
-    display: flex;
     flex-wrap: wrap;
 }
 
@@ -417,8 +415,7 @@ footer {
     padding: 10px;
 }
 
-.container-footer-flex {
-    display: flex;
+.footer-container {
     justify-content: space-between
 }
 
@@ -451,11 +448,11 @@ footer {
     display: inline-block;
 }
 
-.flex-left .flex-left-title a, #heart, #folder, .flex-right-container a {
+.flex-left .flex-left-title a, #heart, #folder, .bottom-right-container a {
     opacity: 0.6;
 }
 
-.flex-left .flex-left-title a:hover, #heart:hover, #folder:hover, .flex-center a:hover, .flex-right-container a:hover {
+.flex-left .flex-left-title a:hover, #heart:hover, #folder:hover, .flex-center a:hover, .bottom-right-container a:hover {
     opacity: 1;
 }
 
@@ -466,34 +463,33 @@ footer .flex-left {
     height: auto;
 }
 
-.flex-left-container {
-    display: flex;
+.footer-left-container {
     width: auto;
     height: 100%;
     align-items: center;
     padding-top: 5px;
 }
 
-.flex-left-container .img-cover {
+.footer-left-container .img-cover {
     min-width: 40px;
     max-width: 30%;
     height: auto;
     padding-right: 10px;
 }
 
-.flex-left-container .flex-left-title {
+.footer-left-container .flex-left-title {
     flex-grow: 1;
 }
 
-.flex-left-container .flex-left-title h3 {
+.footer-left-container .flex-left-title h3 {
     font-size: 12px;
 }
 
-.flex-left-container .flex-left-title a {
+.footer-left-container .flex-left-title a {
     font-size: 10px;
 }
 
-.flex-left-container .flex-left-title a:hover {
+.footer-left-container .flex-left-title a:hover {
     text-decoration: underline;
 }
 
@@ -514,11 +510,10 @@ footer .flex-center {
     font-size: 12px;
 }
 
-.flex-center-top {
+.footer-center-top  {
     width: 40%;
     height: auto;
     margin: auto;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 5px;
@@ -533,8 +528,7 @@ footer .flex-center {
     transform: scale(1.2, 1.2)
 }
 
-footer .flex-center-container {
-    display: flex;
+footer .footer-bottom-container {
     align-items: center;
     justify-content: space-between;
     width: auto;
@@ -542,7 +536,7 @@ footer .flex-center-container {
     padding-top: 15px;
 }
 
-.flex-center-container .bar-top i {
+.footer-bottom-container .bar-top i {
     left: 95%;
     top: -3px;
 }
@@ -552,7 +546,7 @@ footer .flex-center-container {
 }
 
 @media screen and (max-width: 768px) {
-    .bar-container, .flex-center-top {
+    .bar-container, .footer-center-top  {
         width: 70%;
     }
 }
@@ -561,7 +555,7 @@ footer .flex-center-container {
     .bar-container {
         width: 75%;
     }
-    .flex-center-top {
+    .footer-center-top  {
         width: 50%;
     }
 }
@@ -574,28 +568,27 @@ footer .flex-center-container {
 
 /* Flex Right */
 
-footer .flex-right {
+footer .bottom-right {
     width: 20%;
     height: auto;
 }
 
-.flex-right-container {
-    display: flex;
+.bottom-right-container {
     align-items: center;
     justify-content: flex-end;
     width: auto;
     height: 100%;
 }
 
-.flex-right-container a {
+.bottom-right-container a {
     padding-right: 20px;
 }
 
-.flex-right-container .bar-container {
+.bottom-right-container .bar-container {
     min-width: 30%;
 }
 
-.flex-right-container .bar-top i {
+.bottom-right-container .bar-top i {
     left: 85%;
     top: -3px;
     font-size: 12px;
