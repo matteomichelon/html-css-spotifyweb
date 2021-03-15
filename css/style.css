@@ -511,12 +511,12 @@ footer .flex-center {
 }
 
 .flex-center-top {
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-    align-items: center;
     width: 40%;
     height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 5px;
 }
 
@@ -526,7 +526,7 @@ footer .flex-center {
 }
 
 #play-hover:hover {
-    font-size: 30px;
+    transform: scale(1.2, 1.2)
 }
 
 footer .flex-center-container {
