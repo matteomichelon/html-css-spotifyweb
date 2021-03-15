@@ -606,8 +606,8 @@ footer .flex-right {
     width: calc( 100% - 200px);
     text-align: right;
     background-color: #080b12;
-    opacity: 0.8;
     text-transform: uppercase;
+    opacity: 0.8;
 }
 
 .upgrade a {
@@ -620,8 +620,7 @@ footer .flex-right {
 }
 
 .upgrade a:hover {
-    font-size: 15px;
-    padding: 15px 50px;
+    transform: scale(1.1, 1.1);
 }
 
 @media screen and (max-width: 768px) {
