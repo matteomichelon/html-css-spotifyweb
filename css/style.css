@@ -41,16 +41,7 @@ h2 {
 
 nav li, .playlist-button {
     padding: 0 15px 15px 15px;
-    opacity: 0.6;
     font-size: 12px;
-}
-
-nav li:hover, .playlist-button:hover {
-    opacity: 1;
-}
-
-nav .link img, nav span, footer .flex-left span, footer #play {
-    cursor: pointer;
 }
 
 .border-view {
@@ -70,7 +61,7 @@ main {
     background-color: #141922;
 }
 
-/* nav */
+/* Nav common */
 
 nav {
     float: left;
@@ -103,6 +94,20 @@ nav .logo {
     padding: 15px 50px 15px 15px;
 }
 
+.playlist-container a, .main-links a, .xs-logo-container a, .install .link:first-child a {
+    opacity: 0.6;
+}
+
+.logo a:hover, .playlist-container a:hover, .main-links a:hover, .main-links ul li:first-child .link a:hover, .xs-logo-container a:hover, .install .link:first-child a:hover, .install .link:last-child a:hover, .xs-logo-container .xs-logo:nth-child(2) a:hover {
+    opacity: 1;
+}
+
+.logo a, .xs-logo-container .xs-logo:nth-child(2) a, nav .main-links ul li:first-child .link a, .install .link:last-child a {
+    opacity: 0.9;
+}
+
+/* Nav Main Links */
+
 .main-links .border-view .border-green {
     width: 3px;
     top: 0px;
@@ -120,6 +125,8 @@ nav .link {
     vertical-align: middle;
 }
 
+/* Nav Palylist Container */
+
 .playlist-container h2 {
     padding: 0 15px 15px 15px;
     font-size: 15px;
@@ -127,13 +134,14 @@ nav .link {
 
 .playlist-button i {
     font-size: 50px;
-    vertical-align: middle;
     padding-right: 5px;
 }
 
-.playlist-button span {
+.playlist-button i, .playlist-button span {
     vertical-align: middle;
 }
+
+/* Nav Install App */
 
 nav .install {
     padding-bottom: 15px;
@@ -148,7 +156,6 @@ nav .install .line {
     height: 1px;
     display: inline-block;
     border-bottom: 1px solid;
-    opacity: 0.6;
     width: 80%;
 }
 
@@ -159,19 +166,14 @@ nav .img-profile {
 
 nav .install .link:first-child {
     margin-top: 10px;
-    opacity: 0.6;
     font-size: 12px;
-}
-
-nav .install .link:first-child:hover {
-    opacity: 1;
 }
 
 nav .install img {
     margin-right: 5px;
 }
 
-/* Logo Xs */
+/* Nav Xs Logo */
 
 .xs-logo-container {
     flex-direction: column;
@@ -185,11 +187,6 @@ nav .install img {
     width: 40%;
     height: auto;
     padding-bottom: 10px;
-    opacity: 0.6;
-}
-
-.xs-logo-container .xs-logo:first-child, .xs-logo-container .xs-logo:hover {
-    opacity: 1;
 }
 
 .xs-logo-container img:first-child {
@@ -205,7 +202,7 @@ nav .install img {
 }
 
 .xs-logo-container .logo-bottom img {
-    width: 50%;
+    width: 60%;
 }
 
 nav .logo-bottom .img-profile {
@@ -448,6 +445,14 @@ footer {
     display: inline-block;
 }
 
+.flex-left .flex-left-title a, #heart, #folder, .flex-right-container a {
+    opacity: 0.6;
+}
+
+.flex-left .flex-left-title a:hover, #heart:hover, #folder:hover, .flex-center a:hover, .flex-right-container a:hover {
+    opacity: 1;
+}
+
 /* Flex Left */
 
 footer .flex-left {
@@ -478,23 +483,16 @@ footer .flex-left {
     font-size: 12px;
 }
 
-.flex-left-container .flex-left-title span {
+.flex-left-container .flex-left-title a {
     font-size: 10px;
-    opacity: 0.6;
 }
 
-.flex-left-container .flex-left-title span:hover {
-    opacity: 1;
+.flex-left-container .flex-left-title a:hover {
     text-decoration: underline;
 }
 
 .heart-save-container #heart, .heart-save-container #folder {
     display: inline-block;
-    opacity: 0.6;
-}
-
-.heart-save-container #heart:hover, .heart-save-container #folder:hover {
-    opacity: 1;
 }
 
 .heart-save-container a:last-child {
@@ -543,6 +541,10 @@ footer .flex-center-container {
     top: -3px;
 }
 
+.flex-center a{
+    opacity: 0.9;
+}
+
 @media screen and (max-width: 768px) {
     .bar-container, .flex-center-top {
         width: 70%;
@@ -581,11 +583,6 @@ footer .flex-right {
 
 .flex-right-container a {
     padding-right: 20px;
-    opacity: 0.6;
-}
-
-.flex-right-container a:hover {
-    opacity: 1;
 }
 
 .flex-right-container .bar-container {
